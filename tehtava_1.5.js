@@ -17,5 +17,4 @@ var luku = readline.createInterface({
 
 luku.question("Anna viikonpäivän numeron: ",function(answer) { 
     console.log(sanakirja[answer]);
-    
 });   
