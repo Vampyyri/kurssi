@@ -10,16 +10,26 @@ function sekunneiksi(){
     
 }
 
-function euroksi(){
+function euroksi(x){
 
     var syote_markat = prompt("Anna rahoen määrä markoissa ");
     //  1 euro = 5,94573 markkaa
-    var x = (5.94573)
+    
     
     var euroksi = (syote_markat / x).toFixed(2)
     console.log(` ${syote_markat} markaa on ${euroksi} euroa`);
 
 }
 
+function markoiksi(x){
+
+    var syote_eurot = prompt("Anna rahoen määrä eurossa ");
+    var markoiksi = (syote_eurot * x).toFixed(2)
+    console.log(` ${syote_eurot} euroa on ${markoiksi} markaa`);
+}
+
 sekunneiksi()
-euroksi()
+//  1 euro = 5,94573 markkaa
+var kurssi = 5.94573
+euroksi(kurssi)
+markoiksi(kurssi)
