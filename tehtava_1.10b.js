@@ -1,9 +1,23 @@
+
 var prompt = require("prompt-sync")();
 
 function sum(){
     
-    var a = Number(prompt("Anna luku A: "));
-    var b = Number(prompt("Anna luku B: "));
+    var a = -1;
+    while (a < 0) {
+        a = Number(prompt("Anna positiivinen luku A: "));
+        if (a < 0) {
+            console.log("Luku ei ole positiivinen")
+        }
+    }
+    var b = -1;
+    while (b < 0) {  
+        b = Number(prompt("Anna positiivinen luku B: "));
+        if (b < 0) {
+            console.log("Luku ei ole positiivinen")
+        }
+    }   
+    
     if (b > a) {
         for (var i = a; i < (b + 1); i++){
             lukuvali.push(i);
