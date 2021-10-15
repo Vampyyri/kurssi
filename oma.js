@@ -5,6 +5,7 @@ const funktio = (a,b) => {
         
     } 
 }
-
+// 
+//
 a = funktio("5")
 console.log(a)
